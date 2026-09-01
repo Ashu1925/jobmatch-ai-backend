@@ -22,7 +22,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.apache.pdfbox:pdfbox:3.0.6")
     implementation("org.apache.poi:poi-ooxml:5.4.1")
-
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
     runtimeOnly("com.h2database:h2")
@@ -38,7 +37,7 @@ sourceSets {
     named("main") {
         java.setSrcDirs(listOf("."))
         resources.setSrcDirs(listOf("."))
-        resources.exclude("**/*.java", "**/*.kts", "Dockerfile")
+        resources.exclude("**/*.java", "**/*.kts", "Dockerfile", "build/**", ".gradle/**")
     }
 }
 
