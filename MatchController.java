@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 
-@CrossOrigin(origins = {"http://localhost:5173", "http://127.0.0.1:5173", "https://jobmatch-ai-frontend-63y0wmy44-lovingwebsite1925.vercel.app"})
+@CrossOrigin(origins = {"http://localhost:5173", "http://127.0.0.1:5173", "https://jobmatch-ai-frontend-63y0wmy44-lovingwebsite1925.vercel.app", "https://jobmatch-ai-frontend-phi.vercel.app"})
 @RestController
 @RequestMapping("/api/matches")
 public class MatchController {
